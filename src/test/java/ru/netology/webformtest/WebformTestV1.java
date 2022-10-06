@@ -1,12 +1,13 @@
+package ru.netology.webformtest;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
 public class WebformTestV1 {
+
 @Test
     void shouldMakeConfirm(){
     Selenide.open("http://localhost:9999");
