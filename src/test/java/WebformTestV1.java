@@ -10,8 +10,8 @@ public class WebformTestV1 {
 @Test
     void shouldMakeConfirm(){
     Selenide.open("http://localhost:9999");
-    $ ("[data-test-id = 'name']").setValue("Иван Иванов");
-    $ ("[data-test-id = 'phone']").setValue("+79003170909");
+    $("[data-test-id = 'name'] input").setValue("Иван Иванов");
+    $ ("[data-test-id = 'phone'] input").setValue("+79003170909");
     $ ("[data-test-id = 'agreement']").click();
     $$("button").find(Condition.exactText("Продолжить")).click();
 
